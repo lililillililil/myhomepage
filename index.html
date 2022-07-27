@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MY BLOG</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title">나만의 홈페이지 만들기</h1>
+          <h2 class="master-description">심우성</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-left">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">프로필</span>
+                <ul class="inner-menu">                  
+                  <li class="inner-menu-item">
+                    <a href="index.html">프로필</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">MBTI</span>
+                <ul class="inner-menu">                  
+                  <li class="inner-menu-item">
+                    <a href="mbti.html">MBTI</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title">저는 심우성입니다.</h1>
+            </div>
+            <div class="article-body">
+              <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODAyMjdfMTM5%2FMDAxNTE5NzQyNzkzNDY3.7ssGBwqxFIF9ZOMl-I5jfyx2bJEnd2ymVfiCZTXewvEg.pDMF_TeXovhetUXl1rUPfUgFLAN027EYjGZoCEanVP0g.GIF.jelly31day%2F9941647C-1F4D-4CB0-91EC-1E2BD67E3372-3499-000001A95F54A8C2_file.GIF&type=sc960_832_gif" />
+              <p>안녕하세요, 저는 용문고등학교에 재학중인 심우성입니다.</p>
+              <p>저는 1학년 7반입니다</p>
+              
+            </div>
+          </article>
+        </section>
+        <aside id="main-aside">
+          <div class="aside-list">
+            <h3>소개</h3>
+            <ul>
+              <li><a href="#">이메일: swshello@naver.com</a></li>
+              <li><a href="#">Moon in One's Cup</a></li>
+              <li><a href="#">SNS 안함</a></li>
+            </ul>
+          </div>
+        
+        </aside>
+      </div>
+      <footer id="main-footer">
+        <a href="https://github.com/lililillililil">Created By 심우성</a>
+      </footer>
+    </div>
+  </body>
+</html>
